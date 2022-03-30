@@ -42,7 +42,7 @@
       //   "Click"
       // );
       // const container = React.createElement("div", null, [Title, Button]);
-      const Container = (
+      const Container = () => (
         <div>
           <Title />
           <Button />
@@ -50,7 +50,7 @@
       );
       // ReactDOM.render(span, root);
       // ReactDOM.render(button, root);
-      ReactDOM.render(Container, root);
+      ReactDOM.render(<Container />, root);
     </script>
   </body>
 </html>
