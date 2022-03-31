@@ -17,9 +17,11 @@
       function App() {
         // const data = React.useState(10);
         let [counter, modifier] = React.useState(0);
+        console.log(counter, modifier);
 
         const onClick = () => {
-          modifier(counter + 1);
+          // modifier(counter + 1);
+          modifier((item) => counter + 1);
           console.log(counter);
         };
         return (
